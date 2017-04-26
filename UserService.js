@@ -24,5 +24,11 @@ function UserService($q) {
       avatar: '',
       content: 'Coloring book pitchfork mixtape, pinterest snackwave pork belly scenester swag glossier edison bulb.'
     }
-  ]
+  ];
+
+  return {
+    loadAllUsers: function () {
+      return $q.when(users);
+    }
+  };
 }
