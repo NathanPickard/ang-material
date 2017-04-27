@@ -8,7 +8,7 @@
     self.selected = null;
     self.users = [];
     self.selectUser = selectUser;
-    self.toggleUser = toggleUsersList;
+    self.toggleList = toggleUsersList;
     self.share = share;
 
     userService.loadAllUsers().then(function (users) {
